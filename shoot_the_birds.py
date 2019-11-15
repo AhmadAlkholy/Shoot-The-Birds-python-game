@@ -128,11 +128,11 @@ def birdMove():
 
 
 def display_message(text, cord, font=20, color=(200,30,30)):
-        textFont = pygame.font.Font('freesansbold.ttf', font) # font family &size
+        textFont = pygame.font.Font('fonts/FreeSansBold.ttf', font) # font family &size
         textsurface = textFont.render(text, False, color)
         gameDisplay.blit(textsurface,cord)
 def text_width(text, font):
-    textFont = pygame.font.Font('freesansbold.ttf', font)
+    textFont = pygame.font.Font('fonts/FreeSansBold.ttf', font)
     return textFont.render(text, False, (0,0,0) ).get_width()
 # def relood():
 #     bullets = 5

@@ -358,4 +358,3 @@ def hall_of_fame():
 
 game_start()
 pygame.quit()
-quit()

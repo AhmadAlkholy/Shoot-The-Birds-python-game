@@ -317,12 +317,11 @@ def game_start():
                 #     gameExit = True
             display_changing(event)
 
-        if not gameExit:
-            display_message('NEW GAME', menu_dimentions[0], 40, menu_colors[0])
-            display_message('QUIT', menu_dimentions[1], 40, menu_colors[1])
+        display_message('NEW GAME', menu_dimentions[0], 40, menu_colors[0])
+        display_message('QUIT', menu_dimentions[1], 40, menu_colors[1])
 
-            pygame.display.update()  # updates frame
-            clock.tick(10)  # sets frames per second
+        pygame.display.update()  # updates frame
+        clock.tick(10)  # sets frames per second
 
 
 score_time_limit = 4
@@ -347,13 +346,12 @@ def hall_of_fame():
             screen_resize()
             display_changing(event)
 
-        if not gameExit:
-            display_message('YOUR SCORE IS: ', ((displayWidth - text_width('YOUR SCORE IS: ', 40)) * .5, displayHeight * .3), 40)
-            display_message(str(score), ((displayWidth - text_width(str(score), 40)) * .5, displayHeight * .4), 40)
-            # display_message( 'RETURN TO MAIN MENU', ( (displayWidth - text_width( 'RETURN TO MAIN MENU',40)) *.5, displayHeight*.4 ), 40 )
+        display_message('YOUR SCORE IS: ', ((displayWidth - text_width('YOUR SCORE IS: ', 40)) * .5, displayHeight * .3), 40)
+        display_message(str(score), ((displayWidth - text_width(str(score), 40)) * .5, displayHeight * .4), 40)
+        # display_message( 'RETURN TO MAIN MENU', ( (displayWidth - text_width( 'RETURN TO MAIN MENU',40)) *.5, displayHeight*.4 ), 40 )
 
-            pygame.display.update()  # updates frame
-            clock.tick(70)  # sets frames per second
+        pygame.display.update()  # updates frame
+        clock.tick(70)  # sets frames per second
 
 
 game_start()

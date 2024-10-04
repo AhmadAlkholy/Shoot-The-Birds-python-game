@@ -13,7 +13,7 @@ RIGHT = 3
 gameExit = False
 level = 1
 
-gameDisplay = pygame.display.set_mode((displayWidth, displayHeight), pygame.FULLSCREEN)  # the frame of the game with it's size as toople in parameter
+gameDisplay = pygame.display.set_mode((displayWidth, displayHeight), pygame.RESIZABLE)  # the frame of the game with it's size as toople in parameter
 infoObject = pygame.display.Info()
 displayWidth = infoObject.current_w
 displayHeight = infoObject.current_h
@@ -210,7 +210,7 @@ def display_changing(event):
         displayWidth = event.w
         displayHeight = event.h
         displayChange = True
-        pygame.display.set_mode(scrsize, pygame.FULLSCREEN)
+        pygame.display.set_mode(scrsize, pygame.RESIZABLE)
         menu_dimentions = [((displayWidth - text_width('NEW GAME', 40)) * .5, displayHeight * .3),
                            # ( (displayWidth - text_width('HALL OF FAME',40)) *.5 , displayHeight*.4 ),
                            ((displayWidth - text_width('QUIT', 40)) * .5, displayHeight * .4)]
